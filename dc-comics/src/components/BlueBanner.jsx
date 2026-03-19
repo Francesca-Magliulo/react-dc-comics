@@ -8,26 +8,26 @@ import img5 from "../assets/img/buy-dc-power-visa.svg"
 export default function BlueBanner() {
     return (
         <section>
-            <div>
+            <div className="container">
                 <div className="banner-item">
                     <img src={img1} alt="" />
                     <span>DIGITAL COMICS</span>
                 </div>
                 <div className="banner-item">
                     <img src={img2} alt="" />
-                    <span>DIGITAL COMICS</span>
+                    <span>DC MERCHANDISE</span>
                 </div>
                 <div className="banner-item">
                     <img src={img3} alt="" />
-                    <span>DIGITAL COMICS</span>
+                    <span>SUBSCRIPTION</span>
                 </div>
                 <div className="banner-item">
                     <img src={img4} alt="" />
-                    <span>DIGITAL COMICS</span>
+                    <span>COMIC SHOP LOCATOR</span>
                 </div>
                 <div className="banner-item">
                     <img src={img5} alt="" />
-                    <span>DIGITAL COMICS</span>
+                    <span>DC POWER VISA</span>
                 </div>
 
             </div>

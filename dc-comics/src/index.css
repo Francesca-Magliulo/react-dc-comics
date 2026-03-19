@@ -5,12 +5,13 @@
 }
 
 body {
-  min-height: 100vh;
-  font-family: Raleway, sans-serif;
-  min-height: 100vh;
-  background-image: url('./assets/img/mountains.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 img {
@@ -19,11 +20,139 @@ img {
 }
 
 a {
-  color: #000;
+  color: black;
   text-decoration: none;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
+/* Header */
+
+header {
+  background: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 80px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header a {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+header a.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+/* Main*/
+
+.hero {
+  background: #1c1c1c;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}
+
+/*BlueBanner*/
+
+section {
+  background: #0866bd;
+  color: white;
+}
+
+section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.banner-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-item img {
+  width: 40px;
+}
+
+/*Footer*/
+
+footer {
+  background-image: url('./assets/img/footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.columns {
+  display: flex;
+  gap: 40px;
+}
+
+.columns h4 {
+  margin-bottom: 10px;
+}
+
+.columns ul {
+  list-style: none;
+}
+
+.columns li {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+footer img {
+  max-width: 300px;
+}
+
+.footer-bottom {
+  background: #444444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-bottom button {
+  background: transparent;
+  border: 1px solid #0282f9;
+  color: white;
+  padding: 10px 15px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social span {
+  color: #0282f9;
+  font-weight: bold;
 }
