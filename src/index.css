@@ -59,12 +59,11 @@ header a.active {
 /* Main*/
 
 .hero {
-  background: #1c1c1c;
-  color: white;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  padding-left: 200px;
+  height: 300px;
+
+  background-image: url('./assets/img/jumbotron.jpg');
+  background-size: cover;
+  background-position: top;
 }
 
 /*BlueBanner*/
@@ -121,7 +120,7 @@ footer .container {
   list-style: none;
 }
 
-.columns li {
+.columns a {
   font-size: 12px;
   margin-bottom: 5px;
   color: gray;
@@ -155,4 +154,66 @@ footer img {
 .social span {
   color: #0282f9;
   font-weight: bold;
+}
+
+/* Cards */
+
+.comics-section {
+  background: #1c1c1c;
+  padding: 40px 0;
+  position: relative;
+}
+
+/*Label blu su card*/
+
+.section-label {
+  position: absolute;
+  top: -20px;
+  left: 200px;
+
+  background: #0282f9;
+  color: white;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.comics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: calc((100% - 100px) / 6);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #1c1c1c;
+}
+
+.card h5 {
+  font-size: 11px;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Bottone */
+
+.load-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.load-more button {
+  background: #0282f9;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
 }
