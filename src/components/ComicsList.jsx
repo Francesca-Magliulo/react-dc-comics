@@ -1,15 +1,17 @@
-import comics from "../data/comics";
 
-export default function Comics() {
+import ComicCard from "./ComicCard";
+
+export default function ComicsList({ comics }) {
     return (
         <div>
 
             <div className="comics-container">
                 {comics.map((comic) => (
-                    <div className="card" key={comic.id}>
-                        <img src={comic.thumb} alt={comic.title} />
-                        <h5>{comic.title}</h5>
-                    </div>
+                    <ComicCard
+                        key={comic.id}
+                        title={comic.title}
+                        thumb={comic.thumb}
+                    />
                 ))}
             </div>
 

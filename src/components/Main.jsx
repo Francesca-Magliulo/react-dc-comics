@@ -1,6 +1,6 @@
-import Comics from "./Comics"
+import ComicsList from "./ComicsList"
 
-export default function Main() {
+export default function Main({ comics }) {
     return (
         <main>
             <div className="hero"></div>
@@ -8,7 +8,7 @@ export default function Main() {
             <div className="comics-section">
                 <div className="container">
                     <span className="section-label">CURRENT SERIES</span>
-                    <Comics />
+                    <ComicsList comics={comics} />
                 </div>
             </div>
         </main>
